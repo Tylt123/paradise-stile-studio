@@ -1,0 +1,44 @@
+.navigation-bar-with-logo {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+.nav-header {
+  background: none;
+  font-weight: bold;
+}
+
+.navigation-bar-with-logo-op2 {
+  position: relative;
+  width: 100%;
+}
+
+.nav-header-op2 {
+  background-color: var(--primary-color);
+  font-weight: bold;
+}
+
+#nav-hover{
+  color: var(--filler-color-1);
+  /* transition: 0.5s; */
+}
+
+#nav-hover:hover {
+  /* color: var(--secondary-color); */
+  transition: 0.5s;
+}
+
+#nav-hover::after {
+  content: "";
+  width: 0%;
+  height: 10%;
+  background: var(--primary-color);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+#nav-hover:hover::after {
+  width: 100%;
+}
